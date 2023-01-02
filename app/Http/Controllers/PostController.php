@@ -19,7 +19,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return Inertia::render("Post/index",[
+        return Inertia::render("Post/Index",[
             'posts' =>Post::all(),
         ]);
     }
@@ -65,7 +65,9 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return Inertia::render("Post/Show",[
+            'post'=>$post
+        ]);
     }
 
     /**

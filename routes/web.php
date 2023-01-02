@@ -39,6 +39,7 @@ Route::middleware([
 Route::prefix("post")->middleware("auth")->controller(PostController::class)->group(function(){
     Route::get("/", 'index')->name('post.index');
     Route::get("/create", 'create')->name('post.create');
+    Route::get("/show/{post}", 'show')->name('post.show');
     Route::post("/store", 'store')->name('post.store');
     Route::post("/update/{post}", 'update')->name('post.update');
     Route::delete("/delete/{post}", 'delete')->name('post.delete');
