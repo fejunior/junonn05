@@ -20,6 +20,4 @@ h1,
 h2 {
     font-weight: bolder;
 }
-
-h2 {}
 </style>
