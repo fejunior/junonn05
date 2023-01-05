@@ -13,7 +13,7 @@ defineProps({
 <template>
 
     <Head title="Junonn Dev" />
-    <Menu></Menu>
+    <Menu />
     <section class="container">
         <section class="showBox">
             <div>
@@ -337,12 +337,16 @@ defineProps({
     box-sizing: border-box;
 }
 
-body {
+.container {
+
     background-image: linear-gradient(180deg, #222 10%, #011b30 100%);
     background-size: cover;
     background-attachment: fixed;
     color: white;
     font-family: agenda, sans-serif;
+    display: flex;
+    height: 100vh;
+    width: 100wh;
 }
 
 #logo {
@@ -394,12 +398,7 @@ body {
     display: none;
 }
 
-section.container {
-    display: flex;
-    height: 100vh;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+section.container {}
 
 
 section section {
